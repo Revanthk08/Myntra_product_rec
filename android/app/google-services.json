@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "157996136895",
+    "project_id": "internshipproject-38ee1",
+    "storage_bucket": "internshipproject-38ee1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157996136895:android:777676e42db7eee1a5890a",
+        "android_client_info": {
+          "package_name": "com.example.bis_sol_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxSJzhYPgcjUYX4VHrubD9fTzbzHv8mTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
