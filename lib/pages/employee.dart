@@ -13,7 +13,7 @@ class Employee extends StatefulWidget {
 class _EmployeeState extends State<Employee> {
   TextEditingController name = new TextEditingController();
   TextEditingController experience = new TextEditingController();
-
+  bool isActive = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,11 +59,27 @@ class _EmployeeState extends State<Employee> {
               ),
             ),
             const SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text("Is Active?", style: TextStyle(fontSize: 25)),
+                Switch(
+                  value: isActive,
+                  onChanged: (value) {
+                    setState(() {
+                      isActive = value;
+                    });
+                  },
+                ),
+              ],
+            ),
+            SizedBox(height: 20,),
             Center(child: ElevatedButton(onPressed: () async {
               String id = randomAlphaNumeric(10);
               Map<String, dynamic> employeeInfoMap = {
                 "Name": name.text,
-                "Experience": experience.text
+                "Experience": experience.text,
+                "IsActive" : isActive
               };
               await DatabaseMethods().addEmployee(employeeInfoMap, id).then((
                   value) => {
