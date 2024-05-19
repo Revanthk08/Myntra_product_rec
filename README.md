@@ -1,3 +1,3 @@
-# bis_sol_project
+# Internship Task
 
-A new Flutter project.
+Hello there , I am Revanth Adurti and this is my submission for the mobile application developer internship
