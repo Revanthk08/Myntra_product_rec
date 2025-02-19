@@ -8,7 +8,7 @@ git clone https://github.com/Revanthk08/Myntra_product_rec.git
 ```
   ##### Move to the desired folder
 ```bash
-cd \GiveForGood
+cd ./(filename)
 ```
   ##### Download the dependencies
 ```bash
